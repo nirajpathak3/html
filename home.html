@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        nav {
+            text-decoration: none;
+            margin-left: 30%;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: cursive;
+            display: flex;
+        }
+
+        nav li {
+            padding: 5px;
+            color: #aaee34;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="about.html"> About Us</a></li>
+                <li><a href="contact-us.html"> Contact Us</a></li>
+            </ul>
+        </nav>
+        <section>
+            <H3>User Registration Form</H3>
+            <form method="post" action="register.js" name="User Registration" enctype="multipart/form-data">
+                <div>
+                    <label>First Name:</label>
+                    <input type="text" name="firstName" value="" placeholder="Enter your firstname here..."/>
+                </div>
+                <div>
+                    <label>Last Name:</label>
+                    <input type="text" name="lastName" value="" placeholder="Enter your lastname here..."/>
+                </div>
+                <div>
+                    <label>DS:</label>
+                    <input type="checkbox" name="dept[]" value="ds" />
+                    <label>FSD:</label>
+                    <input type="checkbox" name="dept" value="fsd" />
+                    <label>cs:</label>
+                    <input type="checkbox" name="dept" value="cs" />
+                    <label>Devops:</label>
+                    <input type="checkbox" name="dept" value="devops" />
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" name="email" value="" placeholder="Enter your email here..."/>
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" name="password" value=""/>
+                </div>
+                <div>
+                    <label>Avatar:</label>
+                    <input type="file" name="avatar"/>
+                </div>
+                <div>                    
+                    <input type="submit" name="regSubmit" value="Submit" />
+                </div>
+            </form>
+
+        </section>
+        <footer>
+
+        </footer>
+    </header>
+</body>
+
+</html>
